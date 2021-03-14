@@ -13,8 +13,11 @@ Assuma que a e b tem tamanho 2 ou maior.
 """
 
 def mix_up(a, b):
-    # +++ SUA SOLUÇÃO +++
-    return
+    a,b = list(a), list(b)
+    x,y = a[0],a[1]
+    a[0], a[1] = b[0], b[1]
+    b[0], b[1] = x,y
+    return ''.join(a)+" "+''.join(b)
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
