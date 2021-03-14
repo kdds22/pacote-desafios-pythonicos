@@ -14,8 +14,11 @@ onde todas as instancias de stra foram substituidas por strb.
 """
 
 def fix_start(s):
-    # +++ SUA SOLUÇÃO +++
-    return
+    first = s[0]
+    s = s.replace(first, "*")
+    s = list(s)
+    s[0] = first
+    return "".join(s)
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
